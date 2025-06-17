@@ -2,24 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-advancedjs-hw-03/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image Searcher</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Image Search App</title>
     <script type="module" crossorigin src="/goit-advancedjs-hw-03/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-03/assets/vendor-5ObWk2rO.js">
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-03/assets/vendor-DWXSRYDZ.js">
     <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-03/assets/vendor-DumFYO8Z.css">
     <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-03/assets/index-BH_Faiiw.css">
   </head>
   <body>
-    <main>
-      <form id="search-form">
-        <input type="text" name="searchQuery" placeholder="Search images..." />
-        <button type="submit">Search</button>
-      </form>
+    <form class="form" id="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button type="submit">Search</button>
+    </form>
 
-      <div class="loader hidden"></div>
-      <div class="gallery"></div>
-    </main>
+    <span class="loader hidden"></span>
+
+    <ul class="gallery"></ul>
 
   </body>
 </html>

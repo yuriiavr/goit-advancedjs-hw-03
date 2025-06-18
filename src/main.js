@@ -7,6 +7,7 @@ import SimpleLightbox from 'simplelightbox';
 
 import { fetchImages } from './js/pixabay-api';
 import { renderGallery, clearGallery } from './js/render-functions';
+import { showLoader, hideLoader } from './js/loader.js';
 
 const form = document.querySelector('#search-form');
 const gallery = document.querySelector('.gallery');
@@ -52,11 +53,3 @@ form.addEventListener('submit', async e => {
     hideLoader();
   }
 });
-
-function showLoader() {
-  loader.classList.remove('hidden');
-}
-
-function hideLoader() {
-  loader.classList.add('hidden');
-}
